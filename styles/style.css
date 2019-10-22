@@ -54,6 +54,10 @@ body {
   padding: 20px;
 }
 
+.header-nav__item--active {
+  background-color: #e74c3c;
+}
+
 .header-nav__item:hover {
   background-color: #f0f0f0;
 }
