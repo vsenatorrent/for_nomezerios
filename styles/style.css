@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  color: #222222;
+  background-color: #f0f0f0;
+  font-family: 'Arimo', sans-serif;
+}
+
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+.header {
+  margin-top: 20px;
+}
+
+.header-nav {
+  background-color: #fff;
+  padding: 0 40px;
+  margin-bottom: 15px;
+}
+
+.header-nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.header-nav__item {
+  padding: 20px;
+}
+
+.header-nav__item:hover {
+  background-color: #f0f0f0;
+}
+
+.header-nav__item:hover > .header-nav__link {
+  color: #e74c3c;
+}
+
+.header-nav__link {
+  color: #222222;
+}
+
+.refsystem {
+  padding: 40px 60px;
+  margin-bottom: 15px;
+}
+
+.refsystem__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.refsystem__info {
+  text-align: center;
+  font-size: 14px;
+  color: #e74c3c;
+}
+
+.race {
+  padding: 25px 60px;
+}
+
+.race__name {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.race-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
+.race-cards--flexstart {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.race-card {
+  width: 25%;
+  text-align: center;
+  padding: 0 10px;
+}
+
+.race-card--fs {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.race-card__soon {
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  background-color: #000;
+  position: relative;
+}
+
+.race-card__soon-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #ffffff;
+  text-transform: uppercase;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.race-card__logo {
+  margin-bottom: 15px;
+}
+
+.race-card__video {
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  background-color: #000;
+  position: relative;
+}
+
+.race-card__video--enabled {
+  cursor: pointer;
+}
+
+.race-card__video--enabled .race-card__video-button {
+  display: block;
+}
+
+.race-card__video:hover .race-card__video-button-shape {
+  fill: red;
+  fill-opacity: 1;
+}
+
+.race-card__video-media {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.race-card__video-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 68px;
+  height: 48px;
+  border: none;
+  background-color: transparent;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: none;
+}
+
+.race-card__video-button-shape {
+  fill: #212121;
+  fill-opacity: 0.8;
+}
+
+.race-card__video-button-icon {
+  fill: #fff;
+}
+
+.race-card--width {
+  width: 100%;
+}
+
+.race-card-video-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 60px;
+}
+
+.footer__logo {
+  width: 200px;
+  margin-bottom: 20px;
+}
+/*# sourceMappingURL=style.css.map */

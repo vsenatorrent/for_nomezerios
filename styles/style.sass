@@ -1,0 +1,155 @@
+$body-bg-color: #f0f0f0
+$link-hover-color: #e74c3c
+    
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+li
+    list-style: none
+
+a
+    // color: #000000
+    text-decoration: none
+
+body
+    // max-width: 1100px
+    // margin: 0 auto      
+    // border: 1px solid black  
+    color: #222222
+    background-color: $body-bg-color
+    font-family: 'Arimo', sans-serif;
+
+.container
+    max-width: 90%
+    margin: 0 auto   
+    background-color: #fff
+    // border: 1px solid black
+
+.header
+    margin-top: 20px
+    &-nav
+        background-color: #fff
+        padding: 0 40px
+        margin-bottom: 15px
+        &-list    
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+            flex-wrap: wrap
+        &__item
+            padding: 20px
+            &:hover 
+                background-color: $body-bg-color
+                & > .header-nav__link
+                    color: $link-hover-color
+        &__link
+            color: #222222
+
+.refsystem
+    // background-color: #fff 
+    padding: 40px 60px
+    margin-bottom: 15px
+    &__links
+        display: flex
+        flex-direction: row
+        justify-content: space-between        
+        margin-bottom: 10px   
+    &__info
+        text-align: center
+        font-size: 14px
+        color: $link-hover-color
+
+.race
+    // background-color: #fff
+    padding: 25px 60px
+    // margin-bottom: 15px
+    &__name
+        text-align: center
+        font-size: 24px
+        margin-bottom: 10px
+    &-cards
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        margin-bottom: 25px
+        margin-top: 25px
+        &--flexstart
+            justify-content: flex-start
+    &-card
+        width: 25%
+        text-align: center
+        padding: 0 10px
+        &--fs
+            align-self: flex-end
+        &__soon
+            // margin-top: 15px
+            width: 100%
+            height: 0
+            padding-bottom: 56.25%
+            background-color: #000
+            position: relative
+            &-text
+                position: absolute
+                top: 50%
+                left: 50%
+                color: #ffffff
+                text-transform: uppercase
+                transform: translate(-50%, -50%)
+        &__logo
+            margin-bottom: 15px
+        &__video
+            width: 100%
+            height: 0
+            padding-bottom: 56.25%
+            // margin-top: 15px
+            background-color: #000
+            position: relative
+            &--enabled
+                cursor: pointer
+                & .race-card__video-button
+                    display: block
+            &:hover &-button-shape
+                fill: red
+                fill-opacity: 1
+            &-media
+                position: absolute
+                top: 0
+                left: 0
+                width: 100%
+                height: 100%
+                border: none
+            &-button
+                position: absolute
+                top: 50%
+                left: 50%
+                width: 68px
+                height: 48px
+                border: none
+                background-color: transparent
+                transform: translate(-50%, -50%)
+                display: none
+                &-shape
+                    fill: #212121
+                    fill-opacity: 0.8
+                &-icon
+                    fill: #fff
+        &--width
+            width: 100%
+        &-video-container
+            display: flex
+            flex-direction: row
+            .race-card__video
+                // width: 25%
+                // padding-bottom: 28.125%;
+    
+.footer
+    .container
+        display: flex
+        flex-direction: row
+        justify-content: center
+        padding: 0 60px
+    &__logo
+        width: 200px
+        margin-bottom: 20px
