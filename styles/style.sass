@@ -1,5 +1,5 @@
 $body-bg-color: #f0f0f0
-$link-hover-color: #e74c3c
+$red: #e74c3c
     
 *
     margin: 0
@@ -25,33 +25,35 @@ body
     max-width: 90%
     margin: 0 auto   
     background-color: #fff
+    // padding: 0 40px
     // border: 1px solid black
 
 .header
     margin-top: 20px
     &-nav
         background-color: #fff
-        padding: 0 40px
         margin-bottom: 15px
         &-list    
             display: flex
             flex-direction: row
             justify-content: space-between
-            flex-wrap: wrap
+            // flex-wrap: wrap
         &__item
             padding: 20px
+            width: 100%
+            text-align: center
             &--active
-                background-color: $link-hover-color
+                background-color: $red
             &:hover 
                 background-color: $body-bg-color
                 & > .header-nav__link
-                    color: $link-hover-color
+                    color: $red
         &__link
             color: #222222
 
 .refsystem
     // background-color: #fff 
-    padding: 40px 60px
+    padding: 30px 60px
     margin-bottom: 15px
     &__links
         display: flex
@@ -61,7 +63,7 @@ body
     &__info
         text-align: center
         font-size: 14px
-        color: $link-hover-color
+        color: $red
 
 .race
     // background-color: #fff
@@ -154,4 +156,47 @@ body
         padding: 0 60px
     &__logo
         width: 200px
-        margin-bottom: 20px
+        margin: 20px
+
+
+.news-wrapper
+    .container
+        background-color: transparent
+
+.news
+    padding: 10px 20px
+    margin-bottom: 15px
+    background-color: #fff
+    &__date
+        color: $red
+    &__link
+        text-decoration: underline
+
+.pvp-video
+    &__title
+        margin-bottom: 10px
+    .race-cards
+        justify-content: flex-start
+        flex-wrap: wrap
+    .race-card
+        display: flex
+        flex-direction: column
+        justify-content: end
+        padding: 20px
+
+.program
+    &-wrapper
+        .race-card
+            align-self: flex-end
+            margin-bottom: 10px
+        .race-cards
+            justify-content: space-around
+    &__text
+        text-align: center
+        padding: 20px 0
+    &__link
+        text-decoration: underline
+        // font-size: 20px
+    &__img
+        &-wrapper
+            text-align: center

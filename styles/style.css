@@ -31,7 +31,6 @@ body {
 
 .header-nav {
   background-color: #fff;
-  padding: 0 40px;
   margin-bottom: 15px;
 }
 
@@ -46,12 +45,12 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 .header-nav__item {
   padding: 20px;
+  width: 100%;
+  text-align: center;
 }
 
 .header-nav__item--active {
@@ -71,7 +70,7 @@ body {
 }
 
 .refsystem {
-  padding: 40px 60px;
+  padding: 30px 60px;
   margin-bottom: 15px;
 }
 
@@ -241,6 +240,74 @@ body {
 
 .footer__logo {
   width: 200px;
-  margin-bottom: 20px;
+  margin: 20px;
+}
+
+.news-wrapper .container {
+  background-color: transparent;
+}
+
+.news {
+  padding: 10px 20px;
+  margin-bottom: 15px;
+  background-color: #fff;
+}
+
+.news__date {
+  color: #e74c3c;
+}
+
+.news__link {
+  text-decoration: underline;
+}
+
+.pvp-video__title {
+  margin-bottom: 10px;
+}
+
+.pvp-video .race-cards {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.pvp-video .race-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  padding: 20px;
+}
+
+.program-wrapper .race-card {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-bottom: 10px;
+}
+
+.program-wrapper .race-cards {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.program__text {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.program__link {
+  text-decoration: underline;
+}
+
+.program__img-wrapper {
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
